@@ -176,7 +176,9 @@ docker compose up --build
 ## 4️⃣ Open Swagger UI
 http://localhost:8000/docs
 
-# 📂 Project Structure
+
+
+📂 Project Structure
 
 src/
 ├── controllers/
@@ -191,5 +193,5 @@ docs/
 ├── architecture-diagram.png
 └── postman_collection.json
 
- 📌 See `docs/architecture-diagram.md` for the full system architecture.
- 📌 See `docs/erd.png` for the database schema.
+📌 See `docs/architecture-diagram.md` for the full system architecture.
+📌 See `docs/erd.png` for the database schema.
