@@ -123,7 +123,6 @@ This is how real banking and accounting systems work.
 ## 📥 Example API Flows
 
 ### Create Account
-```json
 POST /accounts
 {
   "user_id": "11111111-1111-1111-1111-111111111111",
@@ -131,8 +130,7 @@ POST /accounts
   "currency": "USD"
 }
 
-Deposit
-
+### Deposit
 POST /deposits
 {
   "account_id": "ACCOUNT_ID",
@@ -140,20 +138,20 @@ POST /deposits
   "currency": "USD"
 }
 
-Withdrawal (Insufficient Funds)
+### Withdrawal (Insufficient Funds)
 POST /withdrawals
 {
   "account_id": "ACCOUNT_ID",
   "amount": 100000,
   "currency": "USD"
 }
-Response:
+## Response:
 422 Unprocessable Entity
 {
   "detail": "Insufficient funds"
 }
 
-Transfer
+### Transfer
 POST /transfers
 {
   "source_account_id": "ACCOUNT_A",
@@ -162,23 +160,23 @@ POST /transfers
   "currency": "USD"
 }
 
-🐳 Running the Project
+### 🐳 Running the Project
 
-1️⃣ Clone Repository
+## 1️⃣ Clone Repository
 
 git clone <repo-url>
 cd double-entry-ledger-api
 
-2️⃣ Configure Environment
+## 2️⃣ Configure Environment
 cp .env.example .env
 
-3️⃣ Start with Docker
+## 3️⃣ Start with Docker
 docker compose up --build
 
-4️⃣ Open Swagger UI
+## 4️⃣ Open Swagger UI
 http://localhost:8000/docs
 
-📂 Project Structure
+### 📂 Project Structure
 
 src/
 ├── controllers/
@@ -193,5 +191,5 @@ docs/
 ├── architecture-diagram.png
 └── postman_collection.json
 
-📌 See `docs/architecture-diagram.md` for the full system architecture.
-📌 See `docs/erd.png` for the database schema.
+# 📌 See `docs/architecture-diagram.md` for the full system architecture.
+# 📌 See `docs/erd.png` for the database schema.
