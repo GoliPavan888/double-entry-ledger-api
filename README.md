@@ -192,3 +192,6 @@ docs/
 ├── database-erd.png
 ├── architecture-diagram.png
 └── postman_collection.json
+
+📌 See `docs/architecture-diagram.md` for the full system architecture.
+📌 See `docs/erd.png` for the database schema.
